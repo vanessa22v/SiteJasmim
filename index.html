@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta name="author" content="" />
+
+    <title>Jasmim's</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><i class="fas fa-spa" style="color: #f8bed7"></i>Jasmim</a
+      >
+      <nav class="navbar">
+        <a href="#home"> Home </a>
+        <a href="#destaques">Destaques</a>
+        <a href="#produtos">Produtos </a>
+        <a href="#categorias">Categorias</a>
+        <a href="#contatos">Contatos </a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form method="post" action="busca.php" class="search-form">
+        <input
+          name="busca"
+          type="search"
+          id="search-box"
+          placeholder="pesquise aqui ..."
+        />
+        <button for="search-box" class="fas fa-search"></button>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="imagem/coloniaflor.png" alt="Colonia Margarida" />
+          <div class="content">
+            <h3>Colonia Margarida</h3>
+            <span class="preco">R$ 69,00-</span>
+            <span class="quantidade">qtd : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="imagem/daisy" alt="Colonia Rosa" />
+          <div class="content">
+            <h3>Colonia Rosa</h3>
+            <span class="preco">R$ 69,00 -</span>
+            <span class="quantidade">qtd : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="imagem/lavanda" alt="Colonia Lavanda" />
+          <div class="content">
+            <h3>=Colonia Lavanda</h3>
+            <span class="preco">R$ 69,00 -</span>
+            <span class="quantidade">qtd : 1</span>
+          </div>
+        </div>
+        <br />
+        <div class="total">Total: 207,00</div>
+        <a href="#" class="btn">Finalizar compra</a>
+      </div>
+      <form method="post" action="login.php" class="login-form">
+        <h3>Área de login</h3>
+        <input
+          type="email"
+          name="_login"
+          placeholder="Digite seu e-mail"
+          class="box"
+          required
+        />
+        <input
+          type="senha"
+          name="_senha"
+          placeholder="Digite sua senha"
+          class="box"
+          required
+        />
+        <p>Esqueceu a senha? <a href="#"> Clique Aqui</a></p>
+        <p>Não tem uma conta? <a href="#"> Criar Agora</a></p>
+        <input type="submit" value="Enviar" class="btn" />
+        <input type="cancel" value="Cancelar" class="btn" />
+      </form>
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <div class="content">
+          <h3>Bem vindo ao <span>Jasmim's</span></h3>
+          <h1>Sinta o perfume de jasmim.</h1>
+          <a href="#" class="btn">Negocie agora</a>
+        </div>
+      </section>
+
+      <section id="destaques" class="destaques">
+        <h1 class="heading">Área de<span>Destaques</span></h1>
+        <div class="box-container">
+          <div class="box">
+            <div class="content">
+              <a href=""><img src="imagem/motoo.png" alt="destaque" /></a>
+              <h3>Entregas rapida</h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <a href=""><img src="imagem/dindin.PNG" alt="destaque" /></a>
+              <h3>Promoções</h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+             <a href=""> <img src="imagem/sasasa.png" alt="destaque" /></a>
+              <h3>Mais vendidos</h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <a href><img src="imagem/lotion.png" alt="destaque" /></a>
+              <h3>Favoritos</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="produtos" class="produtos">
+        <h1 class="heading">Área de<span>Produtos</span></h1>
+
+        <div class="box-container">
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/produto_1.webp" alt="Colonia Tulipas" />
+            </div>
+            <div class="content">
+              <h3>Colonia Tulipas</h3>
+              <div class="price">$100,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/azulCamelia" alt="Colonia Camelia" />
+            </div>
+            <div class="content">
+              <h3>Colonia Camelia</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/amarelo" alt="Colonia Girrasol" />
+            </div>
+            <div class="content">
+              <h3>Colonia Girassol</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/laranja" alt="Colonia Dahlia" />
+            </div>
+            <div class="content">
+              <h3>Colonia Dahlia</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/dahlia" alt="Colonia Peônia" />
+            </div>
+            <div class="content">
+              <h3>Colonia Peônia</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/iris" alt="Colonia Flor de Iris" />
+            </div>
+            <div class="content">
+              <h3>Colonia Flor de iris</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/margaridas" alt="Colonia Margarida" />
+            </div>
+            <div class="content">
+              <h3>Colonia Margarida</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/florcereja" alt="Colonia Flor de Cerejeira" />
+            </div>
+            <div class="content">
+              <h3>Colonia Flor de Cerejeira</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/negro.jpg" alt="Colonia Rosa Negra" />
+            </div>
+            <div class="content">
+              <h3>Colonia Rosa Negra</h3>
+              <div class="price">$300,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/lavandas.jpg" alt="Colonia Lavanda" />
+            </div>
+            <div class="content">
+              <h3>Colonia Lavanda</h3>
+              <div class="price">$300,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/fresh" alt="Colonia Hortensia" />
+            </div>
+            <div class="content">
+              <h3>Colonia Hortensia</h3>
+              <div class="price">$200,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+              <a href="#"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="image">
+              <img src="imagem/salmao" alt="Colonia Lirio" />
+            </div>
+            <div class="content">
+              <h3>Colonia Lirio</h3>
+              <div class="price">$180,00</div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categorias" class="categorias">
+        <h1 class="heading">Área de<span>Categorias</span></h1>
+        <div class="box-container">
+          <div class="box">
+            <div class="content">
+              <img src="imagem/bala.png" alt="categorias" />
+              <h3>Doces</h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <img src="imagem/limalimao.PNG" alt="categorias" />
+              <h3>Cítricos</h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <img src="imagem/baubau.png" alt="categorias" />
+              <h3>Baunilha</h3>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <img src="imagem/fofo.PNG" alt="categorias" />
+              <h3>Frescos</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatos" class="contatos">
+        <h1 class="heading">Área de<span> Contatos</span></h1>
+      </section>
+    </main>
+
+    <section class="footer">
+      <div class="box-container" id="contatos">
+        <div class="box">
+          <h3>Jasmim<i class="fas fa-spa" style="color: #f8bed7"></i></h3>
+
+          <div class="share">
+            <a href="" class="fab fa-faceboo-f"></a>
+            <a href="" class="fab fa-intagram"></a>
+            
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Contatos</h3>
+		  <a href="#" class="link"><i class="fab fa-linkedin"></i>Perfumaria.Jasmim</a>
+          <a href="#" class="link"><i class="fas fa-phone"></i>+12-456-7890</a>
+          <a href="#" class="link"><i class="fas fa-phone"></i>+12-565-6780</a>
+          <a href="#" class="link"><i class="fas fa-envelope"></i>PerfumariaJasmim@gmail.com</a>
+          <a href="#" class="link"><i class="fasfa-map-marker-alt"></i>SP, BRAZIL - 029678999</a>
+        </div>
+      </div>
+
+      <script src="js/script.js" type="text/javascript"></script>
+    </section>
+  </body>
+</html>
